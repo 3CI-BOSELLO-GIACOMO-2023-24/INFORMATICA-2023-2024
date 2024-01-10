@@ -1,5 +1,8 @@
+/*
+ * Date in input due date, dire quanti giorni intercorrono tra loro
+ */
 import javax.swing.*;
-public class Es2{
+public class Calcolo_giorni_di_differenza_tra_due_date{
     public static void main(String[] args){
         
         String data1 = "null";
@@ -77,7 +80,7 @@ public class Es2{
         
         //Calcolo giorni totali trascorsi dall'inizio dell'anno fino alla prima data inserita
         if(data1.equals("Data corretta")){
-            do{
+            while(mese1 > 1){
                 
                 mese1 = mese1 - 1;
                 
@@ -98,13 +101,13 @@ public class Es2{
                     totgg1 = totgg1 + 31;
                 }
                 
-            }while(mese1 > 1);
+            }
             
         }
         
         //Calcolo giorni totali trascorsi dall'inizio dell'anno fino alla seconda data inserita
         if(data2.equals("Data corretta")){
-            do{
+            while(mese2 > 1){
                 
                 mese2 = mese2 - 1;
                 
@@ -125,7 +128,7 @@ public class Es2{
                     totgg2 = totgg2 + 31;
                 }
                 
-            }while(mese2 > 1);
+            }
             
         }
         

@@ -1,5 +1,9 @@
+/*presa in ingresso una data espressa in gg mm aaaa,
+ * 1) Dire se è una data ammissibile
+ * 2)Contare quanti giorni sono trascorsi dall'inizio dell'anno
+ */
 import javax.swing.*;
-public class Es1{
+public class Calcolo_giorni_da_inizio_anno{
     public static void main(String[] args){
         
         String data = "null";
@@ -37,8 +41,9 @@ public class Es1{
             data = "Data corretta";
         }
         
+        //Calcolo giorni trascorsi dall'inizio dell'anno fino alla data inserita 
         if(data.equals("Data corretta")){
-            do{
+            while(mese > 1){
                 
                 mese = mese - 1;
                 
@@ -58,8 +63,7 @@ public class Es1{
                     
                     totgg = totgg + 31;
                 }
-                
-            }while(mese > 1);
+            }
             
             System.out.println("Dall\'inizio dell'anno sono trascorsi "+totgg+ " giorni");
         }

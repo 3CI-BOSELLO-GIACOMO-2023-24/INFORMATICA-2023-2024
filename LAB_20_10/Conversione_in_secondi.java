@@ -1,6 +1,6 @@
 //Autore: Giacomo Bosello
 import javax.swing.*;
-public class Es4{
+public class Conversione_in_secondi{
     public static void main(String [] args){
         //Prende in ingresso ore, minuti e secondi
         int ore = Integer.parseInt(JOptionPane.showInputDialog("Inserisci le ore;: "));

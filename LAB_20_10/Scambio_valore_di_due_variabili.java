@@ -1,6 +1,6 @@
 //Autore: Giacomo Bosello
 import javax.swing.*;
-public class Es5{
+public class Scambio_valore_di_due_variabili{
     public static void main(String [] args){
         //Prendo in input i due valori
         int a = Integer.parseInt(JOptionPane.showInputDialog("Dammi il valore di a: "));
